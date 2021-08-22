@@ -1,0 +1,4 @@
+#! /bin/sh
+echo heartbeat > /sys/class/leds/orangepi:red:status/trigger
+exit 0
+
