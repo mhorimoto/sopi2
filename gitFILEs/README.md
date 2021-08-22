@@ -1,9 +1,12 @@
 SOPi2 gitconfig
 ===============
 
-userのnameとemailを適宜書き改めて、作業者のホームディレクトリに
+作業者のホームディレクトリに
 
-.gitconfig
+cp gitconfig ~/.gitconfig
+
 
 としてコピーする。
+userのnameとemailを適宜書き改める。
 
+vi ~/.gitconfig
