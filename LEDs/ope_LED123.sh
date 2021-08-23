@@ -19,12 +19,10 @@ do
 	echo 6 > ${GPIOD}/export
 	echo out > ${GPIOD}/gpio6/direction
     fi
-    echo 1 > ${GPIOD}/gpio2/value
-    echo 1 > ${GPIOD}/gpio3/value
-    echo 1 > ${GPIOD}/gpio6/value
     #
     # For Watcg targets
     #
+    echo 1 > ${GPIOD}/gpio2/value
     if [ -f ${IPCD}/D1.ipconf ]; then
 	fping -q -f ${IPCD}/D1.ipconf
 	if [ $? -eq 0 ]; then
@@ -39,6 +37,7 @@ do
     #
     # For Log Server
     #
+    echo 1 > ${GPIOD}/gpio3/value
     if [ -f ${IPCD}/D2.ipconf ]; then
 	fping -q -f ${IPCD}/D2.ipconf
 	if [ $? -eq 0 ]; then
@@ -53,6 +52,7 @@ do
     #
     # For Gateway
     #
+    echo 1 > ${GPIOD}/gpio6/value
     if [ -f ${IPCD}/D3.ipconf ]; then
 	fping -q -f ${IPCD}/D3.ipconf
 	if [ $? -eq 0 ]; then

@@ -1,5 +1,6 @@
 #! /bin/sh
 
+/usr/bin/install status_led_heartbeat /etc/network/if-up.d
 /usr/bin/install ope_LED123.sh  /usr/local/bin
 /bin/cp ope_LED123.service /etc/systemd/system
 /usr/bin/systemctl daemon-reload

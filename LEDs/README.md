@@ -9,11 +9,7 @@ SOPi2のLED操作のプログラム群
 
 eth0のインタフェースがupしたら内蔵の赤色LEDがハートビート点滅する。
 
-### インストール
-
-install status_led_heartbeat /etc/network/if-up.d
-
-# D1,D2,D3
+# 正面LED D1,D2,D3
 
 ## D1
 
@@ -30,7 +26,7 @@ ping応答が確認できなければ消灯。
 デフォルトゲートウェイとのping応答が確認できたら点灯。
 ping応答が確認できなければ消灯。
 
-### How to Install
+# How to Install
 
     /usr/local/etc/D1.ipconf に監視対象のIPアドレスを1個入れる
     /etc/local/etc/D2.ipconf にログサーバのIPアドレスを1個入れる
