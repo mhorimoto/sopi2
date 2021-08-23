@@ -1,0 +1,11 @@
+[Unit]
+Description = LED (D1,D2,D3) Operation daemon
+After = rc-local.service
+
+[Service]
+ExecStart = /usr/local/bin/ope_LED123.sh
+Restart = always
+Type = Simple
+
+[Install]
+WantedBy = multi-user.target
